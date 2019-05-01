@@ -40,10 +40,10 @@ Script is intented to be used via commandline where you pipe 'git log' output to
 
 ### script output:
 	Author           Email                 Hash      Merge     Date                 Message
-========================================================================================
-dereklowlind     dereklowlind@gmail.c  187f831              Mon Apr 29 17:00   modification 5
-dereklowlind     dereklowlind@gmail.c  fb96a5e   dddf0e2     Mon Apr 29 16:59   Merge branch 'master' of https://github.com/dereklowlind/hello-world into feature
-dereklowlind     38629827+dereklowlin  4c646cd              Sat Apr 27 22:03   new modification (#3)
-dereklowlind     dereklowlind@gmail.c  dddf0e2   f39f39e     Sat Apr 27 22:01   merge fixed
-dereklowlind     dereklowlind@gmail.c  175c06c              Sat Apr 27 21:59   modification 4
-dereklowlind     dereklowlind@gmail.c  f39f39e   67d2f2d     Sat Apr 27 21:56   Merge branch 'master' into feature
+	========================================================================================
+	dereklowlind     dereklowlind@gmail.c  187f831              Mon Apr 29 17:00   modification 5
+	dereklowlind     dereklowlind@gmail.c  fb96a5e   dddf0e2     Mon Apr 29 16:59   Merge branch 'master' of https://github.com/dereklowlind/hello-world into feature
+	dereklowlind     38629827+dereklowlin  4c646cd              Sat Apr 27 22:03   new modification (#3)
+	dereklowlind     dereklowlind@gmail.c  dddf0e2   f39f39e     Sat Apr 27 22:01   merge fixed
+	dereklowlind     dereklowlind@gmail.c  175c06c              Sat Apr 27 21:59   modification 4
+	dereklowlind     dereklowlind@gmail.c  f39f39e   67d2f2d     Sat Apr 27 21:56   Merge branch 'master' into feature
