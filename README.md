@@ -10,47 +10,40 @@ Script is intented to be used via commandline where you pipe 'git log' output to
 
 ## Example
 ### git log output:
+	commit 187f8311bf31a7c8b7588b9c92dc12878feb5987 (HEAD -> feature, origin/feature)
+	Author: dereklowlind <dereklowlind@gmail.com>
+	Date:   Mon Apr 29 17:00:20 2019 -0500
 
-	commit 80eab6766c4718cb27d4f6aa40bf71e79ba3ebcc
-	Author: John Chiu <jchiu@paypal.com>
-	Date:   Sun Oct 13 17:59:43 2013 -0700
+		modification 5
 
-	    Upgraded to 4.X and added Fragments
+	commit fb96a5e967e38c18d29c5cbbd649da0a61fa95f0
+	Merge: dddf0e2 4c646cd
+	Author: dereklowlind <dereklowlind@gmail.com>
+	Date:   Mon Apr 29 16:59:07 2019 -0500
 
-	commit 30ce75f436a0b8a493e022c20e4c3d7138126030
-	Author: johnkchiu <johnkchiu@yahoo.com>
-	Date:   Sun Oct 13 17:00:24 2013 +0000
+		Merge branch 'master' of https://github.com/dereklowlind/hello-world into feature
 
-	    Created new branch dev
+	commit 4c646cd7c3e7a5f34d82f6216455f3462ebdffb6
+	Author: dereklowlind <38629827+dereklowlind@users.noreply.github.com>
+	Date:   Sat Apr 27 22:03:09 2019 -0700
 
-	commit 2677b9d6d8b100d85fbd6da1b4a4187a21b676ab
-	Author: John Chiu <jchiu@paypal.com>
-	Date:   Tue Oct 16 20:33:33 2012 -0700
+		new modification (#3)
 
-	    - Rewrote song properties
-	    - Added Android Support Library
-	    - Clean up some code
+	commit dddf0e2787444fda98b5502e92d7b7d80356cc93
+	Merge: f39f39e 175c06c
+	Author: dereklowlind <dereklowlind@gmail.com>
+	Date:   Sat Apr 27 22:01:09 2019 -0700
 
-	commit 55b61986d82842f20788310cf7ffe4a02ca49437
-	Author: Chiu <jchiu@LM-SJN-00713306.(none)>
-	Date:   Thu Apr 5 23:43:30 2012 -0700
+		merge fixed
 
-	    Added back Eclipse files
 	...
 
 ### script output:
-
-
-	[jchiu@laptop]$ git log | ~/bin/gitLogParser.py
-	Author           Email                 Hash      Message
-	=================================================================================
-	John Chiu        jchiu@paypal.com      80eab67   Upgraded to 4.X and added Fragments
-	johnkchiu        johnkchiu@yahoo.com   30ce75f   Created new branch dev
-	John Chiu        jchiu@paypal.com      2677b9d   - Rewrote song properties
-	Chiu             jchiu@LM-SJN-0071330  55b6198   Added back Eclipse files
-	Chiu             jchiu@LM-SJN-0071330  1af4d7d   Added songs.properties file and data models
-	Chiu             jchiu@LM-SJN-0071330  884293f   Merge branch 'master' of https://bitbucket.org/... 
-	Chiu             jchiu@LM-SJN-0071330  006b306   Added splash screen and refactor filenames
-	Chiu             jchiu@LM-SJN-0071330  7b9ce47   Added splash screen and refactor filenames
-	Chiu             jchiu@LM-SJN-0071330  5885eb7   Working MediaService, SongList and SongView
-	Chiu             jchiu@LM-SJN-0071330  c6f4003   Remove bin and gen directories
+	Author           Email                 Hash      Merge     Date                 Message
+========================================================================================
+dereklowlind     dereklowlind@gmail.c  187f831              Mon Apr 29 17:00   modification 5
+dereklowlind     dereklowlind@gmail.c  fb96a5e   dddf0e2     Mon Apr 29 16:59   Merge branch 'master' of https://github.com/dereklowlind/hello-world into feature
+dereklowlind     38629827+dereklowlin  4c646cd              Sat Apr 27 22:03   new modification (#3)
+dereklowlind     dereklowlind@gmail.c  dddf0e2   f39f39e     Sat Apr 27 22:01   merge fixed
+dereklowlind     dereklowlind@gmail.c  175c06c              Sat Apr 27 21:59   modification 4
+dereklowlind     dereklowlind@gmail.c  f39f39e   67d2f2d     Sat Apr 27 21:56   Merge branch 'master' into feature
